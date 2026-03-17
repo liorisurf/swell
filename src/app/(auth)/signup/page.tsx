@@ -31,12 +31,15 @@ export default function SignupPage() {
       if (authError) throw authError
 
       if (data.user) {
-        // Create user record
-        await supabase.from('users').insert({
-          id: data.user.id,
-          email: data.user.email!,
-          full_name: fullName,
-          onboarding_completed: false,
+        // Create user record via API to use service role
+        await fetch('/api/auth/create-user', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            id: data.user.id,
+            email: data.user.email!,
+            full_name: fullName,
+          }),
         })
 
         router.push('/onboarding')
