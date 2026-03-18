@@ -8,12 +8,12 @@ import { NAV_ITEMS } from '@/lib/constants'
 import {
   LayoutDashboard, Search, Sparkles, Beaker, TrendingUp,
   UserCheck, BarChart3, FlaskConical, Send, UserPlus,
-  Target, ChevronLeft, ChevronRight, Shield, Waves,
+  Target, ChevronLeft, ChevronRight, Shield, Waves, Bot,
 } from 'lucide-react'
 
 const iconMap: Record<string, React.ElementType> = {
   LayoutDashboard, Search, Sparkles, Beaker, TrendingUp,
-  UserCheck, BarChart3, FlaskConical, Send, UserPlus, Target,
+  UserCheck, BarChart3, FlaskConical, Send, UserPlus, Target, Bot,
 }
 
 export function Sidebar() {

@@ -59,4 +59,5 @@ export const NAV_ITEMS = [
   { name: 'Experiments', href: '/experiments', icon: 'FlaskConical' },
   { name: 'Outreach', href: '/outreach', icon: 'Send' },
   { name: 'Invite Friends', href: '/invite', icon: 'UserPlus' },
+  { name: 'Automation', href: '/automation', icon: 'Bot' },
 ] as const
